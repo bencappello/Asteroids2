@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="keymaster.js"></script>
-    <script src="lib/utils.js"></script>
-    <script src="lib/movingObject.js"></script>
-    <script src="lib/asteroid.js"></script>
-    <script src="lib/bullet.js"></script>
-    <script src="lib/game.js"></script>
-    <script src="lib/gameView.js"></script>
-    <script src="lib/ship.js"></script>
+    <script src="lib/javascripts/keymaster.js"></script>
+    <script src="lib/javascripts/utils.js"></script>
+    <script src="lib/javascripts/movingObject.js"></script>
+    <script src="lib/javascripts/asteroid.js"></script>
+    <script src="lib/javascripts/bullet.js"></script>
+    <script src="lib/javascripts/game.js"></script>
+    <script src="lib/javascripts/gameView.js"></script>
+    <script src="lib/javascripts/ship.js"></script>
   </head>
 
   <body>
@@ -17,7 +17,7 @@
     <script>
       var canvasEl = document.getElementById("game-canvas");
       var img = new Image();
-      img.src = 'space.jpg';
+      img.src = 'lib/images/space.jpg';
       canvasEl.height = window.innerHeight - 20;
       canvasEl.width = window.innerWidth - 20;
       var context = canvasEl.getContext("2d");
