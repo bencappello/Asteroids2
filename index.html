@@ -15,7 +15,10 @@
 
   <body>
     <canvas id="game-canvas"></canvas>
-
+    <section id='scoreboard'>
+      <div id="score"></div>
+      <div id="lives"></div>
+    <section>
     <script>
       var canvasEl = document.getElementById("game-canvas");
       var img = new Image();
@@ -23,8 +26,11 @@
       canvasEl.height = window.innerHeight - 20;
       canvasEl.width = window.innerWidth - 20;
       var context = canvasEl.getContext("2d");
-      var game = new Asteroids.Game(canvasEl.width, canvasEl.height, img);
-      var gameView = new Asteroids.GameView(context, game);
+      currentGame = new Asteroids.Game(canvasEl.width, canvasEl.height, img);
+      gameView = new Asteroids.GameView(context);
+      lives = 10;
+      score = 0;
+      RadiusReduction = 0.5;
       gameView.start();
     </script>
   </body>
