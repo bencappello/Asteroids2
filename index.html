@@ -26,11 +26,16 @@
       canvasEl.height = window.innerHeight - 20;
       canvasEl.width = window.innerWidth - 20;
       var context = canvasEl.getContext("2d");
+      lives = 2;
+      score = 0;
+      Radius_Reduction = 0.5;
+      Asteroid_Speed = 0.2;
+      Num_Asteroids = 15;
+      context.font = '30px Calibri';
+      context.fillStyle = 'orange';
+      context.fillText('Hello World!', 150, 100);
       currentGame = new Asteroids.Game(canvasEl.width, canvasEl.height, img);
       gameView = new Asteroids.GameView(context);
-      lives = 10;
-      score = 0;
-      RadiusReduction = 0.5;
       gameView.start();
     </script>
   </body>
