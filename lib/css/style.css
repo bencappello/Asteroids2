@@ -44,10 +44,12 @@ body {
   background: black;
   display: block;
   position: relative;
+  /*border-left: 1px solid white;
+  border-right: 1px solid white;*/
 }
 
 #sidebar header {
-  margin-top: 10px;
+  padding: 25px 0 0 0;
   margin-bottom: 20px;
 }
 
