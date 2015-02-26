@@ -1,0 +1,60 @@
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  box-sizing: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  color: inherit;
+  background: transparent;
+}
+
+#board {
+  position: relative;
+  z-index: 1;
+}
+
+#game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -60px;
+  margin-top: -40px;
+  z-index: 2;
+}
+
+#game-over h2 {
+  display: block;
+  color: orange;
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+#new-game-btn {
+  display: block;
+  padding: 10px;
+  border: 1px solid orange;
+  background: blue;
+  color: white;
+  font-size: 20px;
+  margin: auto;
+  /*border-radius: 3px;*/
+}
+
+#new-game-btn:hover {
+  cursor: pointer;
+  background: red;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
