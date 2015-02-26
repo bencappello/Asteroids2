@@ -14,11 +14,6 @@ body, button, h2, h3, span, div {
 }
 
 body {
-  /*background: url('../images/industrial_pattern.jpg') center no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;*/
   background: black;
   width: 100%;
   height: 100%;
@@ -157,6 +152,11 @@ body {
   display: block;
   position: absolute;
   left: 200px;
+  background: url('../images/space2.png') center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #game-over {
