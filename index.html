@@ -32,11 +32,11 @@
       canvasEl.width = window.innerWidth - 20;
       var context = canvasEl.getContext("2d");
       Frame_Rate = 2;
-      lives = 1;
+      lives = 5;
       score = 0;
       Radius_Reduction = 0.5;
-      Asteroid_Speed = 0.9;
-      Num_Asteroids = 30;
+      Asteroid_Speed = 0.2;
+      Num_Asteroids = 10;
       context.font = '30px Calibri';
       context.fillStyle = 'orange';
       currentGame = new Asteroids.Game(canvasEl.width, canvasEl.height, img);

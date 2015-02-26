@@ -1,4 +1,4 @@
-button {
+button, h2 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -10,6 +10,7 @@ button {
   vertical-align: inherit;
   color: inherit;
   background: transparent;
+  /*font-family: Sans-serif;*/
 }
 
 #board {
@@ -21,34 +22,45 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-left: -60px;
-  margin-top: -40px;
+  margin-left: -120px;
+  margin-top: -86px;
   z-index: 2;
 }
 
 #game-over h2 {
   display: block;
   color: orange;
-  font-size: 30px;
+  font-size: 60px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
+  text-shadow:
+    1px 0 0 black,
+    -1px 0 0 black,
+    0 1px 0 black,
+    0 -1px 0 black,
+    1px 1px black,
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black;
 }
 
 #new-game-btn {
   display: block;
   padding: 10px;
-  border: 1px solid orange;
-  background: blue;
+  border: 1px solid white;
+  background: #1A2366;
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   margin: auto;
-  /*border-radius: 3px;*/
+  border-radius: 5px;
 }
 
 #new-game-btn:hover {
   cursor: pointer;
-  background: red;
+  border: 1px solid #D6D6D6;
+  background: #19204F;
+  color: #D6D6D6;
 }
 
 .show {
