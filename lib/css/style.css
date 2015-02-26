@@ -1,4 +1,4 @@
-button, h2 {
+body, button, h2, h3, span, div {
   margin: 0;
   padding: 0;
   border: 0;
@@ -13,9 +13,148 @@ button, h2 {
   /*font-family: Sans-serif;*/
 }
 
+body {
+  /*background: url('../images/industrial_pattern.jpg') center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+  background: black;
+  width: 100%;
+  height: 100%;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+}
+
+.group:after {
+  clear: both;
+  display: block;
+  content: '';
+}
+
+/*SIDE BAR*/
+
+#sidebar {
+  width: 200px;
+  min-height: 500px;
+  z-index: 1;
+  background: black;
+  display: block;
+  position: relative;
+}
+
+#sidebar header {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#sidebar header img {
+  width: 200px;
+  height: 20px;
+}
+
+.side-frame {
+  padding: 10px 0;
+  border-top: 1px solid black;
+  outline: 1px solid white;
+  background: #36353B;
+  margin-top: 1px;
+}
+
+.side-frame {
+  border-bottom: 1px solid black;
+}
+
+#sidebar h3 {
+  font-weight: 700;
+  font-size: 25px;
+  color: black;
+  text-align: center;
+  letter-spacing: 7px;
+}
+
+#score {
+  font-size: 20px;
+  color: orange;
+  text-align: center;
+  margin: auto;
+  letter-spacing: 5px;
+  font-family: sans-serif;
+  text-shadow:
+    1px 0 0 black,
+    -1px 0 0 black,
+    0 1px 0 black,
+    0 -1px 0 black,
+    1px 1px black,
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black;
+}
+
+#lives {
+  font-weight: 700;
+  font-size: 20px;
+  color: #1A1061;
+  text-align: center;
+  margin: auto;
+  letter-spacing: 5px;
+  font-family: sans-serif;
+  text-shadow:
+    0.5px 0 0 black,
+    -0.5px 0 0 black,
+    0 0.5px 0 black,
+    0 -0.5px 0 black,
+    0.5px 0.5px black,
+    -0.5px -0.5px 0 black,
+    0.5px -0.5px 0 black,
+    -0.5px 0.5px 0 black;
+}
+
+#new-game-btn {
+  width: 100%;
+  color: white;
+  background: #1A2366;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  padding: 10px 0;
+  margin-top: 10px;
+
+  font-weight: 900;
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 3px;
+
+  -webkit-transition: color 0.5s, background-color 1s;
+  transition: color 0.5s, background-color 1s;
+}
+
+#new-game-btn:hover {
+  cursor: pointer;
+  background: #C2C2C2;
+  color: black;
+  font-weight: 700;
+}
+
+
+
+
+
+/*BOARD*/
+
 #board {
+  min-width: 500px;
+  min-height: 500px;
   position: relative;
   z-index: 1;
+  display: block;
+  position: absolute;
+  left: 200px;
 }
 
 #game-over {
@@ -23,7 +162,7 @@ button, h2 {
   top: 50%;
   left: 50%;
   margin-left: -120px;
-  margin-top: -86px;
+  margin-top: -35px;
   z-index: 2;
 }
 
@@ -43,24 +182,6 @@ button, h2 {
     -1px -1px 0 black,
     1px -1px 0 black,
     -1px 1px 0 black;
-}
-
-#new-game-btn {
-  display: block;
-  padding: 10px;
-  border: 1px solid white;
-  background: #1A2366;
-  color: white;
-  font-size: 30px;
-  margin: auto;
-  border-radius: 5px;
-}
-
-#new-game-btn:hover {
-  cursor: pointer;
-  border: 1px solid #D6D6D6;
-  background: #19204F;
-  color: #D6D6D6;
 }
 
 .show {
