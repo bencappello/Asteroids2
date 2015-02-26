@@ -18,12 +18,14 @@
   <body>
     <section id='container'>
       <section id='sidebar'>
+
         <section id='board'>
           <canvas id="game-canvas"></canvas>
           <div id="game-over" class='show hide'>
             <h2>Game Over</h2>
           </div>
         </section>
+
         <header>
           <img src="lib/images/asteroids_logo.jpg"/>
         </header>
@@ -36,6 +38,7 @@
           <div id='lives'></div>
         </section>
         <button id='new-game-btn'>New Game</button>
+
       </section>
     </section>
     <script>
@@ -48,22 +51,18 @@
         $('#board').css('width', windowWidth - 205);
 
         var canvasEl = document.getElementById("game-canvas");
-        var img = new Image();
-        img.src = 'lib/images/space2.png';
         canvasEl.height = $('#board').innerHeight();
         canvasEl.width = $('#board').innerWidth();
         var context = canvasEl.getContext("2d");
         Frame_Rate = 2;
-        lives = 1;
+        lives = 5;
         score = 0;
         $('#score').html(score);
         $('#lives').html(lives);
         Radius_Reduction = 0.5;
-        Asteroid_Speed = 0.2;
+        Min_Asteroid_Speed = 0.2;
         Num_Asteroids = 10;
-        // context.font = '30px Calibri';
-        // context.fillStyle = 'orange';
-        currentGame = new Asteroids.Game(canvasEl.width, canvasEl.height, img);
+        currentGame = new Asteroids.Game(canvasEl.width, canvasEl.height);
         gameView = new Asteroids.GameView(context);
         gameView.start();
         $('#score').html(score);
