@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <link href="lib/css/style.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="lib/css/style.css" rel="stylesheet" type="text/css" charset="utf-8">
     <script src="lib/javascripts/jquery-2.1.1.js"></script>
     <script src="lib/javascripts/underscore.js"></script>
     <script src="lib/javascripts/keymaster.js"></script>
@@ -39,18 +40,17 @@
         </section>
         <button id='new-game-btn'>New Game</button>
 
-        <h3 id='controls'>Controls</h3>
-        <h4>Turn Left</h4>
-        <h5 class='turn'>left arrow</h5>
-        <h4>Turn Right</h4>
-        <h5 class='turn'>right arrow</h5>
-        <h4>Forward Thrust</h4>
-        <h5 class='thrust'>up arrow</h5>
-        <h4>Backward Thrust</h4>
-        <h5 class='thrust'>down arrow</h5>
+        <!-- <h3 id='controls'>Controls</h3> -->
         <h4>Fire</h4>
         <h5 class='fire'>space</h5>
-
+        <h4>Forward Thrust</h4>
+        <h5 class='thrust'>↑</h5>
+        <h4>Backward Thrust</h4>
+        <h5 class='thrust'>↓</h5>
+        <h4>Rotate Left</h4>
+        <h5 class='turn'>←</h5>
+        <h4>Rotate Right</h4>
+        <h5 class='turn'>→</h5>
       </section>
     </section>
     <script>
@@ -81,5 +81,6 @@
         $('#lives').html(lives);
       });
     </script>
+    <script charset="utf-8"></script>
   </body>
 </html>
