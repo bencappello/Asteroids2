@@ -1,4 +1,4 @@
-body, button, h2, h3, span, div {
+body, button, h2, h3, h4, h5, span, div {
   margin: 0;
   padding: 0;
   border: 0;
@@ -71,6 +71,45 @@ body {
   color: black;
   text-align: center;
   letter-spacing: 7px;
+}
+
+h3#controls {
+  margin-top: 20px;
+  text-decoration: underline;
+  color: white;
+}
+
+#sidebar h4 {
+  font-weight: 700;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  letter-spacing: 5px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#sidebar h5 {
+  font: helvetica;
+  font-weight: 700;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  letter-spacing: 5px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+#sidebar h5.turn {
+  color: #6E92FF;
+}
+
+#sidebar h5.thrust {
+  color: #71DB5E;
+}
+
+#sidebar h5.fire {
+  color: orange;
 }
 
 #score {
