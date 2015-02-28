@@ -45,10 +45,10 @@
             <div id="menu">
               <div id="menu-container">
                 <h2>Difficulty</h2>
-                <button class="btn menu-btn">Tourist</button>
-                <button class="btn menu-btn">Deck Hand</button>
-                <button class="btn menu-btn">Gunner</button>
-                <button class="btn menu-btn">Commander</button>
+                <button class="btn menu-btn" data-level='1'>Tourist</button>
+                <button class="btn menu-btn" data-level='2'>Deck Hand</button>
+                <button class="btn menu-btn" data-level='3'>Gunner</button>
+                <button class="btn menu-btn" data-level='4'>Commander</button>
               </div>
             </div>
           </div>
@@ -65,11 +65,11 @@
         </header>
         <section class='side-frame'>
           <h3>SCORE</h3>
-          <div id='score'></div>
+          <div id='score'>0</div>
         </section>
         <section class='side-frame'>
           <h3>LIVES</h3>
-          <div id='lives'></div>
+          <div id='lives'>5</div>
         </section>
         <button id='new-game-btn' class='btn'>New Game</button>
 
@@ -100,18 +100,10 @@
         canvasEl.width = $('#board').innerWidth();
         var context = canvasEl.getContext("2d");
         Frame_Rate = 2;
-        lives = 5;
-        score = 0;
-        $('#score').html(score);
-        $('#lives').html(lives);
-        Radius_Reduction = 0.5;
-        Min_Asteroid_Speed = 0.2;
-        Num_Asteroids = 10;
+
         currentGame = new Asteroids.Game(canvasEl.width, canvasEl.height);
         gameView = new Asteroids.GameView(context);
         gameView.start();
-        $('#score').html(score);
-        $('#lives').html(lives);
       });
     </script>
     <script charset="utf-8"></script>

@@ -259,9 +259,6 @@ h5.fire {
   webkit-transform: translate(-50%, -50%);
   width: 500px;
   height: 500px;
-  /*border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  outline: 1px solid white;*/
   background-color: rgba(255, 255, 255, 0.5);
   z-index: 4;
 }
