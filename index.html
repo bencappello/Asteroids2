@@ -100,10 +100,8 @@
         canvasEl.width = $('#board').innerWidth();
         var context = canvasEl.getContext("2d");
         Frame_Rate = 2;
-
-        var img = new Image();
-        img.src = 'lib/images/space2.png';
-        currentGame = new Asteroids.Game(canvasEl.width, canvasEl.height, img);
+        
+        currentGame = new Asteroids.Game(canvasEl.width, canvasEl.height);
         gameView = new Asteroids.GameView(context);
         gameView.start();
       });
