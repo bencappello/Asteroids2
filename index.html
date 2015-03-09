@@ -101,7 +101,9 @@
         var context = canvasEl.getContext("2d");
         Frame_Rate = 2;
 
-        currentGame = new Asteroids.Game(canvasEl.width, canvasEl.height);
+        var img = new Image();
+        img.src = 'space2.jpg';
+        currentGame = new Asteroids.Game(canvasEl.width, canvasEl.height, img);
         gameView = new Asteroids.GameView(context);
         gameView.start();
       });
