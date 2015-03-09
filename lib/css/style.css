@@ -256,7 +256,9 @@ h5.fire {
   top: 50%;
   left:  50%;
   transform: translate(-50%, -50%);
-  webkit-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   width: 500px;
   height: 500px;
   background-color: rgba(255, 255, 255, 0.5);
