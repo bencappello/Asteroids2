@@ -57,6 +57,7 @@
           <canvas id="game-canvas"></canvas>
           <div id="game-over" class='show hide'>
             <h2>Game Over</h2>
+            <button class='btn new-game-btn'>New Game</button>
           </div>
         </section>
 
@@ -71,7 +72,7 @@
           <h3>LIVES</h3>
           <div id='lives'>5</div>
         </section>
-        <button id='new-game-btn' class='btn'>New Game</button>
+        <button class='btn new-game-btn'>New Game</button>
 
         <!-- <h3 id='controls'>Controls</h3> -->
         <h4>Fire</h4>
@@ -100,7 +101,7 @@
         canvasEl.width = $('#board').innerWidth();
         var context = canvasEl.getContext("2d");
         Frame_Rate = 2;
-        
+
         currentGame = new Asteroids.Game(canvasEl.width, canvasEl.height);
         gameView = new Asteroids.GameView(context);
         gameView.start();
