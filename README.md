@@ -13,6 +13,6 @@ A browser-based version of the classic arcade game Asteroids.
 * Asteroids regenerate for endless game play
 
 ###Technical Details
-* Written in Javascript and HTML5 Canvas.
-* Uses trigonometric functions to recalculate angle of ship rotation for forward thrusting and bullets.
-* Custom inherit function utilized by all moving objects.
+* Written in Javascript and HTML5 Canvas
+* Uses trigonometric functions to recalculate angle of ship rotation for forward thrusting and bullets
+* Custom inherit function utilized by all moving objects
